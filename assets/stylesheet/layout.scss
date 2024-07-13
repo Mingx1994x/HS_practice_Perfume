@@ -1,0 +1,79 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helper/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "./utilities.scss";
+
+nav.nav {
+    h1.pf-logo {
+        a {
+            display: block;
+            width: 128px;
+            height: 38px;
+            background: url("../img/d’Perfume.png") no-repeat;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    button.navBtn {
+        padding: 13px 16px;
+    }
+
+    ul.navBar {
+        li.navItem {
+            a {
+                font-size: 20px;
+                padding: 13px 16px;
+            }
+        }
+    }
+
+    .cartNum {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+section.subscribe {
+    background: url(../../assets/img/index10.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding-top: 312px;
+    padding-bottom: 112px;
+
+    h2.subscribe-title {
+        font-size: 32px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-btn {
+        font-size: 16px;
+        padding: 20px 25px;
+        border-radius: 2px;
+    }
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    section.subscribe {
+        background-position: 0 center;
+
+        h2.subscribe-title {
+            color: #8D8D8D
+        }
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

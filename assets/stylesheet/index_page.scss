@@ -1,0 +1,33 @@
+@import "./layout";
+
+
+header.header {
+    height: 926px;
+    background-size: cover;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+}
+
+section.intro {
+
+    .go-to-shop {
+        text-align: center;
+
+        a {
+            font-size: 28px;
+            color: #fff;
+            display: block;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    header {
+        height: 536px;
+    }
+}
