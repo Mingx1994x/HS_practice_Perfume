@@ -1,5 +1,5 @@
 body {
-  font-family: SF Pro Text, sans-serif;
+  font-family: SF Pro Text, PingFang TC, sans-serif;
   line-height: 1.5;
 }
 
@@ -13,12 +13,30 @@ i {
   height: 24px;
 }
 
+.py-10 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .mb-15 {
   margin-bottom: 60px;
 }
 
 .mb-20 {
   margin-bottom: 80px;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+a.btnLink {
+  height: 60px;
+  border-radius: 30px;
 }
 
 .borderLeft-radius {

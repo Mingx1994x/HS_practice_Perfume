@@ -46,19 +46,35 @@ section.subscribe {
     h2.subscribe-title {
         font-size: 32px;
         line-height: 1.5;
+        font-weight: 600;
         margin-bottom: 20px;
     }
 
-    .subscribe-btn {
-        font-size: 16px;
-        padding: 20px 25px;
-        border-radius: 2px;
+    .subscribe-info {
+        input:hover {
+            border: 2px solid #6C4700;
+        }
+
+        .subscribe-btn {
+            font-size: 16px;
+            padding: 20px 25px;
+            border-radius: 2px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #6C4700;
+        }
     }
+
 }
 
 footer {
     padding-top: 20px;
     padding-bottom: 22px;
+
+    p.copyrights {
+        font-weight: 500;
+    }
 }
 
 

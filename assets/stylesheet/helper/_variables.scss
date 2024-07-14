@@ -47,7 +47,7 @@ $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 // scss-docs-end color-variables
 
-// Perfume color-variables
+// custom Perfume color-variables
 $pf-light: #E0E0E0;
 $pf-gray: #8D8D8D;
 $pf-blown: #916019;
@@ -304,10 +304,14 @@ $dark: $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
+  // custom colors 
   "primary": $pf-light,
+  // $primary,
   "secondary": $pf-gray,
+  //$secondary,
   "success": $success,
   "info": $pf-blown,
+  //$info,
   "warning": $warning,
   "danger": $danger,
   "light": $light,
@@ -371,7 +375,7 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+$enable-rfs: false !default;
 $enable-validation-icons: true !default;
 $enable-negative-margins: false !default;
 $enable-deprecation-messages: true !default;
@@ -511,9 +515,8 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-// 試試看改格線系統 寬度
-// $grid-gutter-width: 1.5rem !default;
-$grid-gutter-width: 30px !default;
+// custom grid-gutter
+$grid-gutter-width: 30px; //1.5rem !default;
 $grid-row-columns: 6 !default;
 
 // Container padding
@@ -666,7 +669,8 @@ $headings-margin-bottom: $spacer * .5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.2 !default;
+// custom lh
+$headings-line-height: 1.5; //1.2 !default;
 $headings-color: inherit !default;
 // scss-docs-end headings-variables
 

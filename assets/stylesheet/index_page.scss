@@ -1,33 +1,221 @@
-@import "./layout";
-
-
 header.header {
-    height: 926px;
-    background-size: cover;
-    background-position: 70% 50%;
-    background-repeat: no-repeat;
+    height: 870px;
+
+    h2.slogan {
+        font-size: 40px;
+    }
+
+    p.banner-text {
+        font-size: 24px;
+    }
+
+    a.btnLink:hover {
+        background-color: #FFFFFF4D;
+    }
 }
 
-section.intro {
+main.info-perfume {
+    ul.info-items {
+        li.info-list {
+            .info-cover {
+                height: 555px;
 
-    .go-to-shop {
-        text-align: center;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 555px;
+                }
+            }
 
-        a {
-            font-size: 28px;
-            color: #fff;
-            display: block;
-            padding-top: 13px;
-            padding-bottom: 13px;
-            border: 2px solid #fff;
-            border-radius: 30px;
+            .info-context {
+                ol.maintenance {
+                    h3 {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        li.info-list:nth-child(1) img {
+            object-position: top center;
+        }
+
+        li.info-list:nth-child(3) img {
+            object-position: center left;
+        }
+
+        li.info-list:nth-child(4) {
+            .info-context {
+                ol li {
+                    margin-bottom: 52px;
+
+                }
+
+                a.btnLink:hover {
+                    background-color: #0000000D;
+                }
+            }
+
+            .info-cover {
+                height: 1080px;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 1080px;
+                }
+            }
         }
     }
 }
 
+section.Adds {
+    background-color: #E0E0E0;
 
+    ul.Adds-items {
+        li.Adds-list {
+
+            .onSale,
+            .soldOut {
+                height: 540px;
+                position: relative;
+            }
+
+            .soldOut::before {
+                background: rgba(0, 0, 0, 0.3);
+                font-size: 24px;
+                color: #fff;
+                content: "Sold out";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h3.Adds-title {
+                font-weight: 600;
+            }
+
+        }
+    }
+}
+
+// 響應式mobile
 @media screen and (max-width:576px) {
-    header {
-        height: 536px;
+    header.header {
+        height: 480px;
+        margin-bottom: 40px;
+
+        h2.slogan {
+            font-size: 32px;
+        }
+
+        p.banner-text {
+            font-size: 20px;
+        }
+    }
+
+    main.info-perfume {
+        margin-bottom: 40px;
+
+        ul.info-items {
+            li.info-list {
+                margin-bottom: 32px;
+
+                .info-cover {
+                    height: 350px;
+                    margin-bottom: 8px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 350px;
+                    }
+                }
+
+                .info-context {
+                    p {
+                        margin-bottom: 8px;
+                    }
+                }
+
+            }
+
+            li.info-list:nth-child(1) img {
+                object-position: top center;
+            }
+
+            li.info-list:nth-child(3) img {
+                object-position: center left;
+            }
+
+            li.info-list:nth-child(4) {
+                .info-context {
+                    ol li {
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .info-cover {
+                    height: 680px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 680px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.Adds {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 40px;
+
+        ul.Adds-items {
+
+            li.Adds-list {
+                margin-bottom: 24px;
+
+                .onSale,
+                .soldOut {
+                    height: 350px;
+                    position: relative;
+                }
+
+                p.Adds-brand {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            li.Adds-list:nth-child(3) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    section.eco-friendly {
+        margin-bottom: 40px;
+
+        .eco-img {
+            margin-bottom: 8px;
+        }
+
+        .eco-article {
+            h3 {
+                margin-bottom: 0;
+            }
+
+            h4.subtitle,
+            p {
+                margin-bottom: 8px;
+            }
+
+        }
     }
 }
